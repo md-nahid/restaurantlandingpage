@@ -1,0 +1,88 @@
+
+
+footer {
+    background-color: #111010;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 0;
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .col3 {
+            width: calc(100% / 3 - 40px);
+            margin: 0 20px;
+            .payment {
+                margin-top: 30px;
+                a {
+                    color: #ffffff;
+                    &:not(:last-child) {
+                        margin-right: 10px;
+                    } 
+                }
+            }
+            .socialicon {
+                margin-top: 30px;
+                a {
+                    color: #ffffff;
+                    &:not(:last-child) {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// =================================
+// for laptop view or less than 1024px
+// =================================
+@media screen and (max-width: 1024px) {
+    footer {
+        .container {
+            width: 100%;
+        }
+    }
+}
+
+
+
+// =================================
+// for tablet view or less than 769px
+// =================================
+@media screen and (max-width: 768px) {
+    footer {
+        .container {
+            flex-wrap: wrap;
+            .col3 {
+                width: calc(100% / 2 - 40px);
+                &:last-child {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+
+// =================================
+// for mobile view or less than 600px
+// =================================
+@media screen and (max-width: 600px) {
+    footer {
+        .container {
+            .col3 {
+                width: 100%;
+                &:not(:last-child) {
+                    margin-bottom: 40px;
+                }
+                &:last-child {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+
+// about section style
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(252, 252, 252);
+    padding-top: 60px;
+    div {
+        width: calc( 100% / 2);
+    }
+    .rightfood {
+        .rightfoodimage {
+            width: 200px;
+            margin: 15px auto;
+        }
+        .foodman {
+            width: 180px;
+            margin: 15px auto;
+        }
+        .rightfoodtext {
+            width: 80%;
+            margin: 0 auto;
+            text-align: inherit;
+            line-height: 1.6;
+            font-size: 18px;
+        }
+    }
+    .dishphoto {
+        // background-color: red;
+        height: 100%;
+        padding: 50px;
+        div {
+            width: 100%;
+            height: 100%;
+            .dish2 {
+                display: none;
+            }
+        }
+    }
+}
+
+
+// =================================
+// for laptop view or less than 1025px
+// =================================
+@media screen and (max-width: 1024px) {
+    // about section style
+    .about {
+        width: 100%;
+        padding-top: 70px;
+    }
+}
+
+
+
+// =================================
+// for tablet view or less than 769px
+// =================================
+@media screen and (max-width: 768px) {
+    // about section style
+    .about {
+        padding-top: 100px;
+        .rightfood {
+            h2 {
+                font-size: 25px;
+            }
+            .rightfoodimage {
+                width: 50%;
+            }
+            .rightfoodtext {
+                width: 95%;
+                text-align: justify;
+                line-height: 1.3;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+
+// =================================
+// for mobile view or less than 601px
+// =================================
+@media screen and (max-width: 600px) {
+   // about section style
+    .about {
+        div {
+            width: 100%;
+        }
+        .rightfood {
+            div.rightfoodimage {
+                width: 40%;
+            }
+        }
+        .dishphoto {
+            height: 60%;
+            padding: 0;
+        }
+    }
+}

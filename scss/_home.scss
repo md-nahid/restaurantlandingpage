@@ -1,0 +1,95 @@
+
+$firstheadingfontsize : 80px;
+
+// home page style
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/backgroundimg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .container {
+        h1 {
+            color: #ffffff;
+            font-size: $firstheadingfontsize;
+        }
+        .bannerlogo {
+            width: 250px;
+            height: 35px;
+            margin: 25px auto;
+        }
+        .bannerbtns {
+            .homesecondbtn {
+                border: 1px solid rgb(255, 255, 255);
+                background-color: rgba(255, 255, 255, 0.612);
+                &:hover {
+                    border: 1px solid rgb(0, 0, 0);
+                    background-color: rgba(0, 0, 0, 0.612);
+                }
+            }
+            .homefirstbtn {
+                margin-right: 30px;
+                border: 1px solid rgb(0, 0, 0);
+                background-color: rgba(0, 0, 0, 0.612);
+                &:hover {
+                    border: 1px solid rgb(255, 255, 255);
+                    background-color: rgba(255, 255, 255, 0.612);
+                }
+            }
+        }
+    }
+}
+
+
+
+// =================================
+// for laptop view or less than 1025px
+// =================================
+@media screen and (max-width: 1024px) {
+    // home page style
+    .home {
+        .container {
+            h1 {
+                color: #ffffff;
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+
+// =================================
+// for tablet view or less than 769px
+// =================================
+@media screen and (max-width: 768px) {
+
+}
+
+
+// =================================
+// for mobile device view or less than 600px
+// =================================
+@media screen and (max-width: 600px) {
+    .home {
+        .container {
+            h1 {
+                font-size: 30px;
+            }
+            .bannerbtns {
+                .homesecondbtn {
+                    width: 100%;
+                    margin-top: 20px;
+                }
+                .homefirstbtn {
+                    margin-right: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

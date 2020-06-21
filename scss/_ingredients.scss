@@ -1,0 +1,87 @@
+
+
+.ingredients {
+    background-image: url(../images/ingredintsbgimg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-right: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .fineingredients {
+        width: 45%;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.726);
+        text-align: center;
+        border-radius: 5px;
+        h2 {
+            color: #ffffff;
+        }
+        .whitelogo {
+            width: 40%;
+            margin: 15px auto;
+        }
+        .ingredientstext {
+            width: 95%;
+            color: #ffffff;
+            line-height: 1.4;
+            font-size: 18px;
+            text-align: justify;
+        }
+        .ingredientsitem {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 30px 0;
+            img {
+                width: calc( 100% / 3 -30px);
+                margin: 0 15px;
+            }
+        }
+    }
+}
+
+
+
+// =================================
+// for laptop view or less than 1025px
+// =================================
+@media screen and (max-width: 1024px) {
+    .ingredients {
+        .fineingredients {
+            width: 60%;
+        }
+    }
+}
+
+
+
+
+// =================================
+// for tablet view or less than 769px
+// =================================
+@media screen and (max-width: 768px) {
+    .ingredients {
+        padding-right: 0;
+        justify-content: space-around;
+        .fineingredients {
+            width: 80%;
+        }
+    }
+}
+
+
+
+
+// =================================
+// for mobile view or less than 601px
+// =================================
+@media screen and (max-width: 600px) {
+    .ingredients {
+        .fineingredients {
+            width: 100%;
+        }
+    }
+}
