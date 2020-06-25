@@ -10,12 +10,14 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    overflow: hidden;
     .fineingredients {
         width: 45%;
         padding: 20px;
         background-color: rgba(0, 0, 0, 0.726);
         text-align: center;
         border-radius: 5px;
+        animation-duration: 1s;
         h2 {
             color: #ffffff;
         }

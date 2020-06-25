@@ -34,6 +34,7 @@ button {
     font-weight: 500;
     color: #ffffff;
     transition: 0.5s;
+    animation-delay: 1.5s;
     &:hover {
         cursor: pointer;
     }
@@ -59,6 +60,12 @@ h3 {
     width: 200px;
     margin: 15px auto;
 }
+
+.foodman {
+    width: 200px;
+    margin: 15px auto;
+}
+
 
 
 // navigation big screen menu collapse class

@@ -5,9 +5,11 @@
     display: flex;
     justify-content: space-around;
     padding: 80px 0;
+    overflow: hidden;
     .menucol {
         width: calc( 100% / 2 - 100px);
         margin: 0 50px;
+        animation-duration: 1s;
         .menurow {
             padding: 10px 0;
             .menulist {

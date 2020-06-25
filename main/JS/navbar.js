@@ -4,7 +4,11 @@
 let opendropdown = document.getElementById("opendropdown");
 opendropdown.addEventListener("click", () => {
     let sidebarsection = document.querySelector(".sidebarsection");
-    sidebarsection.classList.toggle("mobilemenutoggle");
+    if(sidebarsection.classList.contains("fadeOutRight")) {
+        sidebarsection.classList.replace("fadeOutRight", "fadeInLeft")
+    }else {
+        sidebarsection.classList.add("fadeOutRight");
+    }
 });
 
 
@@ -13,8 +17,8 @@ let dropdownmenu = document.querySelectorAll(".dropdownmenu");
 dropdownmenu.forEach((item) => {
     item.addEventListener('click', () => {
         let sidebarsection = document.querySelector(".sidebarsection");
-        if(sidebarsection.classList.contains("mobilemenutoggle")) {
-            sidebarsection.classList.remove("mobilemenutoggle")
+        if(sidebarsection.classList.contains("fadeInLeft")) {
+            sidebarsection.classList.replace("fadeInLeft", "fadeOutRight")
         }
     });
 });

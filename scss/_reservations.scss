@@ -7,6 +7,7 @@
     align-items: center;
     padding-top: 70px;
     padding-bottom: 30px;
+    overflow: hidden;
     .col {
         width: calc( 100% / 2);
     }
@@ -22,6 +23,7 @@
     }
     .contactform {
         text-align: center;
+        animation-duration: 1s;
         .logo {
             width: 280px;
         }

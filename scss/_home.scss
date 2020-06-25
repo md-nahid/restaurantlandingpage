@@ -10,9 +10,9 @@ $firstheadingfontsize : 80px;
     background-position: center;
     background-size: cover;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     .container {
         h1 {
             color: #ffffff;
@@ -22,6 +22,7 @@ $firstheadingfontsize : 80px;
             width: 250px;
             height: 35px;
             margin: 25px auto;
+            animation-delay: 1s;
         }
         .bannerbtns {
             .homesecondbtn {

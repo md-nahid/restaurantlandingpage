@@ -5,6 +5,7 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 50px 0;
+    overflow: hidden;
     .container {
         display: flex;
         flex-direction: row;
@@ -12,6 +13,12 @@ footer {
         .col3 {
             width: calc(100% / 3 - 40px);
             margin: 0 20px;
+            &:first-child {
+                animation-delay: 2s;
+            }
+            &:nth-child(2) {
+                animation-delay: 1s;
+            }
             .payment {
                 margin-top: 30px;
                 a {
