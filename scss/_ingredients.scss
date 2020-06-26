@@ -4,7 +4,7 @@
     background-image: url(../images/ingredintsbgimg.png);
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 50px;
     padding-right: 200px;
     display: flex;
@@ -12,7 +12,7 @@
     justify-content: flex-end;
     overflow: hidden;
     .fineingredients {
-        width: 45%;
+        width: 50%;
         padding: 20px;
         background-color: rgba(0, 0, 0, 0.726);
         text-align: center;
@@ -21,15 +21,12 @@
         h2 {
             color: #ffffff;
         }
-        .whitelogo {
+        .logo {
             width: 40%;
-            margin: 15px auto;
         }
         .ingredientstext {
-            width: 95%;
             color: #ffffff;
             line-height: 1.4;
-            font-size: 18px;
             text-align: justify;
         }
         .ingredientsitem {
@@ -53,7 +50,7 @@
 @media screen and (max-width: 1024px) {
     .ingredients {
         .fineingredients {
-            width: 60%;
+            width: 80%;
         }
     }
 }

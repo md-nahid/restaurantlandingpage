@@ -14,3 +14,39 @@
         }
     }
 }
+
+
+// =================================
+// for laptop view or less than 1025px
+// =================================
+@media screen and (max-width: 1024px) {
+    .about {
+        .container {
+            flex-wrap: wrap;
+            .rightfood {
+                width: 100%;
+            }
+            .dishimg {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+// =================================
+// for Tablet view or less than 769px
+// =================================
+@media screen and (max-width: 768px) {
+    
+}
+
+
+
+// =================================
+// for Mobile view or less than 600px
+// =================================
+@media screen and (max-width: 600px) {
+    
+}
